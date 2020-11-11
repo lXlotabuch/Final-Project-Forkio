@@ -1,0 +1,43 @@
+.present-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 48px 0;
+    background-color: lightgray;
+}
+
+.present-trial{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.07;
+    font-weight: 400;
+    color: rgba(132,142,151,1);
+}
+
+.present-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 54px;
+    line-height: 1;
+    font-weight: 700;
+    color: $prim-color;
+    text-transform: uppercase;
+    margin: 66px 0 0 0;
+}
+
+.present-info{
+    font-family: 'Lato', sans-serif;
+    font-size: 21px;
+    line-height: 1.52;
+    font-weight: 400;
+    color: rgba(50,50,50,1);
+    text-align: center;
+    margin: 35px 0 13px 0;
+}
+
+.btn-place{
+    display: flex;
+    margin: 0 0 22px 0;
+}

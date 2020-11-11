@@ -54,7 +54,7 @@ gulp.task("htmlBuild", () => {
 
 gulp.task(
   "build",
-  gulp.series("cleanDist", "scssBuild", "jsBuild", "imageBuild", "htmlBuild"),
+  gulp.series("cleanDist", "htmlBuild", "scssBuild", "jsBuild", "imageBuild"),
 );
 
 // gulp.task("dev", () => {
