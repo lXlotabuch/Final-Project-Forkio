@@ -1,20 +1,9 @@
 .present-section{
-    display: flex;
+    @include flex-center;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     max-width: 860px;
     margin: 0 auto;
-    padding: 48px 0;
-    background-color: lightgray;
-}
-
-.present-trial{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    line-height: 1.07;
-    font-weight: 400;
-    color: rgba(132,142,151,1);
+    padding: 48px 40px;
 }
 
 .present-title{
@@ -24,7 +13,8 @@
     font-weight: 700;
     color: $prim-color;
     text-transform: uppercase;
-    margin: 66px 0 0 0;
+    text-align: center;
+    margin: 40px 0 0 0;
 }
 
 .present-info{
@@ -34,10 +24,94 @@
     font-weight: 400;
     color: rgba(50,50,50,1);
     text-align: center;
-    margin: 35px 0 13px 0;
+    margin: 35px 0 16px 0;
 }
 
 .btn-place{
-    display: flex;
+    @include flex-center;
+    flex-wrap: wrap;
     margin: 0 0 22px 0;
+}
+
+.btn{
+    display: flex;
+    border: 1px solid rgba(27,31,35,0.15);
+    border-radius: 6px;
+    font-size: 12px;
+    line-height: 20px;
+
+    &:not(:last-child){
+        margin: 0 10px 0 0;
+    }
+}
+
+.svg,
+.number{
+    padding: 3px 12px;
+    @include flex-center;
+    text-decoration: none;
+    color: rgba(36,41,46,1);
+    transition: color, background-color 0.3s linear;
+}
+
+.svg{
+    background-color: rgba(250,251,252,1);
+    &:hover{
+        background-color: rgba(243,244,246,1);
+    }
+    & > svg{
+        margin-right: 3px;
+    }
+}
+
+
+
+.number{
+    &:hover{
+        color: rgba(3,102,214,1);
+    }
+    border-left: 1px solid rgba(27,31,35,0.15);
+}
+
+@media (max-width: 1199.98px){
+
+    .present-title{
+        font-size: 42px;
+    }
+
+    .btn-place{
+        margin: 11px 0 0 0;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    
+    .present-section{
+        padding: 48px 26px;
+    }
+
+    .present-title{
+        font-size: 26px;
+        line-height: 1.08;
+    }
+
+    .present-info{
+        font-size: 14px;
+        line-height: 1.43;
+    }
+
+    .btn-place{
+        max-width: 320px;
+    }
+
+    .btn{
+        &:not(:first-child){
+            margin: 0;
+        }
+
+        &:last-child{
+            margin: 20px 0 0 0;
+        }
+    }
 }
