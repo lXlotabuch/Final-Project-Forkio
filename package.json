@@ -20,5 +20,8 @@
     "gulp-js-minify": "0.0.3",
     "gulp-sass": "^4.1.0",
     "gulp-uglify": "^3.0.2"
-  }
+  },
+  "browserslist": [
+    "last 3 versions"
+  ]
 }
