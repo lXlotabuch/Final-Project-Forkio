@@ -11,7 +11,7 @@
     background-repeat: repeat;
     background-size: cover;
     text-align: center;
-    padding: 20px 10% 90px;
+    padding: 20px 10px 90px;    
 }
 
 .pricing-title{
@@ -47,7 +47,6 @@
     &.active{
         width: 299px;
         background-color: rgba(70,48,72,0.84);
-        // zoom: 1.2;
         & .pricing-name{
             padding: 43px 0;
             background-color: rgba(0,0,0,0.11);
@@ -143,10 +142,10 @@
 }
 
 
-@media (max-width: 1199.98px){
+@media (max-width: 992.98px){
     
     .pricing{
-        padding: 30px 10px 94px;
+        padding: 30px 10px 64px;
     }
 
     .pricing-title{
@@ -156,7 +155,7 @@
 
     .pricing-wrapper{
         flex-wrap: wrap;
-        max-width: 650px;
+        max-width: 600px;
         margin: 0 auto;
     }
 
@@ -187,11 +186,31 @@
     }
 };
 
+@media (max-width: 644px){
+
+    .pricing-ticket{
+        width: 100%;
+
+        &.active{
+            width: 100%;
+        }
+
+        &:last-child{
+            margin: 0;
+        }
+
+        &:not(:last-child){
+            margin: 0 50px 18px;
+        }
+    }
+
+}
+
 
 @media (min-width: 320px) and (max-width: 480px){
 
     .pricing{
-        padding: 20px 10px;
+        padding: 40px 10px 20px;
     }
 
     .pricing-title{
