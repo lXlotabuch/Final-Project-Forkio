@@ -1,0 +1,222 @@
+.container{
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+.pricing{
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../image/pricing-bg.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 20px 10% 90px;
+}
+
+.pricing-title{
+    font-size: 48px;
+    line-height: 1.04;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 61px 0;
+}
+
+.pricing-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing-ticket{
+    display: flex;
+    flex-direction: column;
+    width: 257px;
+    color: #ffffff;
+    background-color:rgba(255,255,255,0.11);
+
+    &:hover{
+        cursor: pointer;
+        animation: 1s linear infinite shuffle;
+    }
+
+    &:not(:last-child){
+        margin-right: 15px;
+    }
+
+    &.active{
+        width: 299px;
+        background-color: rgba(70,48,72,0.84);
+        // zoom: 1.2;
+        & .pricing-name{
+            padding: 43px 0;
+            background-color: rgba(0,0,0,0.11);
+        }
+        & .price{
+            font-size: 82px;
+            line-height: 1.1;
+            margin: 14px 0 16px 0;
+        }
+        & .per-month::after{
+            margin: 46px 0 40px;
+        }
+        & .pricing-btn{
+            margin: 83px 0 47px;
+        }
+    }
+}
+
+.pricing-name{
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 400;
+    padding: 36px 0;
+    text-transform: uppercase;
+    background-color:rgba(255,255,255,0.06);
+}
+
+.pricing-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.price{
+    font-size: 60px;
+    line-height: 1.5;
+    font-weight: 700;
+    margin: 10px 0 0 0;
+}
+
+.per-month{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 400;
+    &::after{
+        content: "";
+        width: 60px;
+        height: 5px;
+        background-color: rgba(141,129,172,1);
+        margin: 38px 0 30px;
+    }
+}
+
+.license{
+    font-size: 16px;
+    line-height: 1.12;
+    font-weight: 400;
+    min-height: 34px;
+}
+
+.pricing-btn{
+    display: inline-block;
+    padding: 15px 38px;
+    background: rgba(255,255,255,0.15);
+    align-self: center;
+    border-radius: 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 48px 0 37px;
+}
+
+@keyframes shuffle{
+    0%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(2deg);
+    }
+    50%{
+        transform: rotate(0);
+    }
+    75%{
+        transform: rotate(-2deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+
+
+@media (max-width: 1199.98px){
+    
+    .pricing{
+        padding: 30px 10px 94px;
+    }
+
+    .pricing-title{
+        font-size: 42px;
+        padding: 61px 0 39px;
+    }
+
+    .pricing-wrapper{
+        flex-wrap: wrap;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    .pricing-ticket{
+
+        width: 50%;
+        max-width: 257px;
+        margin-bottom: 30px;
+
+        &:nth-child(odd){
+            margin: 0 25px 30px 0;
+        };
+        
+        &:nth-child(even){
+            margin: 0 0 30px 0;
+        };
+
+        &:last-child{
+            max-width: 257px;
+            // width: 47%;
+        };
+
+        &.active{
+            margin-left: -42px;
+            width: 53%;
+            max-width: 299px;
+        };
+    }
+};
+
+
+@media (min-width: 320px) and (max-width: 480px){
+
+    body{
+        min-width: 320px;
+    }
+
+    .pricing{
+        padding: 20px 10px;
+    }
+
+    .pricing-title{
+        font-size: 28px;
+        line-height: 1.5;
+        padding: 0 0 32px;
+    }
+
+    .pricing-ticket{
+        width: 100%;
+
+        &.active{
+            width: 100%;
+        }
+
+        &:last-child{
+            margin: 0;
+        }
+
+        &:not(:last-child){
+            margin: 0 0 18px 0;
+        }
+    }
+}
