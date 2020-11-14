@@ -15,7 +15,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 1200px;
+  max-width: 1380px;
   margin: 0 auto;
 }
 .container {
@@ -180,6 +180,9 @@ body {
   height: 62px;
   background: #8d81ac;
   border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   h2 {
     font-family: "Montserrat", sans-serif;
@@ -212,6 +215,7 @@ header {
     font-size: 14px;
     text-align: center;
     color: #848e97;
+    margin-top: 37px;
   }
 }
 

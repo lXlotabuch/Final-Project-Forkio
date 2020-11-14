@@ -1,10 +1,8 @@
 .talk-sec {
-  height: 100vh;
   background-image: url("../image/testmonials-bg\ 1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 
   h2 {
     padding-top: 110px;
@@ -18,14 +16,16 @@
 }
 .wrapper-testimonials {
   position: relative;
-  margin-top: 80px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+  max-width: 1200px;
+  margin: 60px auto -50px auto;
 
   & .wrap-img-text {
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -33,12 +33,14 @@
     width: calc(950px / 3);
 
     p {
+      margin-top: 33px;
       font-family: Lato;
       font-style: italic;
       font-weight: bold;
       font-size: 16px;
       text-align: center;
       color: #ffffff;
+      line-height: 22px;
     }
 
     & .imgBox {
@@ -62,7 +64,6 @@
   width: 80%;
   margin: 0 auto;
   text-align: center;
-  margin-top: 60px;
 
   p {
     font-family: Lato;
@@ -71,9 +72,11 @@
     font-size: 14px;
     color: #a291a5;
     line-height: 20px;
+    padding-bottom: 10px;
   }
 
   .hr {
+    margin: 0;
     border: 0.5px solid #645766;
     width: 100%;
   }
@@ -84,7 +87,7 @@
     background: none;
   }
   .talk-sec {
-    height: 100vh;
+    // height: 100vh;
 
     h2 {
       padding-top: 30px;
@@ -111,24 +114,23 @@
     }
   }
   .conditions {
-    margin: 0;
-    position: absolute;
-    bottom: 2%;
-    left: 50%;
-    transform: translate(-50%, 0%);
+    margin-top: 10px;
 
     p {
       margin: 0;
       font-size: 10px;
       line-height: 11px;
+      padding-bottom: 0px;
+      line-height: 15px;
+    }
+    .hr {
+      margin: 0;
     }
   }
 }
 
 @media (min-width: 320px) and (max-width: 482px) {
   .talk-sec {
-    height: 180vh;
-
     h2 {
       padding-top: 30px;
       font-size: 39px;
@@ -139,15 +141,15 @@
     margin-top: 10px;
 
     & .wrap-img-text {
-      margin-top: 40px;
+      margin-top: 55px;
       width: 100%;
-      padding-right: 12px;
-      padding-left: 12px;
+      padding-right: 6px;
+      padding-left: 6px;
 
       p {
-        width: 70%;
+        width: 90%;
         margin: 0 auto;
-        font-size: 13px;
+        font-size: 15px;
         line-height: 18px;
       }
 
@@ -157,11 +159,12 @@
     }
   }
   .conditions {
-    margin: 0;
-    position: absolute;
-    bottom: 2%;
-    left: 50%;
-    transform: translate(-50%, 0%);
+    margin: 100px 0px 0px 0px;
+
+    // position: absolute;
+    // bottom: 2%;
+    // left: 50%;
+    // transform: translate(-50%, 0%);
 
     p {
       margin: 0;
