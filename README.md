@@ -1,6 +1,6 @@
 # Final-Project-Forkio
 
-Git Pages[https://lxlotabuch.github.io/Final-Project-Forkio/dist/]
+https://lxlotabuch.github.io/Final-Project-Forkio/dist/
 
 Команда: Антон Мірошніченко, Влад Баришполець.
 
