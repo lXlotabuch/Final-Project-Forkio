@@ -12,4 +12,4 @@ https://lxlotabuch.github.io/Final-Project-Forkio/dist/
 
 Завдання: 
  - Антон Мірошніченко: Завдання для студента №2 (Revolutionary Editor, Here is what you get, Fork Subscription Pricing), Gulp збірка.
- - Влад Баришполець: Завдання для студента №1 (Header, People Are Talking About Fork).
+ - Влад Баришполець: Завдання для студента №1 (Header, People Are Talking About Fork), Gulp збірка.
